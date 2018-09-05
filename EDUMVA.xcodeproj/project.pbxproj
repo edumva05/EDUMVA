@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64A006D9213FD940001BA205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A006D8213FD940001BA205 /* AppDelegate.swift */; };
-		64A006DB213FD940001BA205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A006DA213FD940001BA205 /* ViewController.swift */; };
+		64A006DB213FD940001BA205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A006DA213FD940001BA205 /* HomeViewController.swift */; };
 		64A006DE213FD940001BA205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A006DC213FD940001BA205 /* Main.storyboard */; };
 		64A006E1213FD940001BA205 /* EDUMVA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64A006DF213FD940001BA205 /* EDUMVA.xcdatamodeld */; };
 		64A006E3213FD942001BA205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A006E2213FD942001BA205 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		64A006D5213FD940001BA205 /* EDUMVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDUMVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A006D8213FD940001BA205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64A006DA213FD940001BA205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64A006DA213FD940001BA205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64A006DD213FD940001BA205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A006E0213FD940001BA205 /* EDUMVA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EDUMVA.xcdatamodel; sourceTree = "<group>"; };
 		64A006E2213FD942001BA205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				64A006D8213FD940001BA205 /* AppDelegate.swift */,
-				64A006DA213FD940001BA205 /* ViewController.swift */,
+				64A006DA213FD940001BA205 /* HomeViewController.swift */,
 				64A006DC213FD940001BA205 /* Main.storyboard */,
 				64A006E2213FD942001BA205 /* Assets.xcassets */,
 				64A006E4213FD942001BA205 /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A006DB213FD940001BA205 /* ViewController.swift in Sources */,
+				64A006DB213FD940001BA205 /* HomeViewController.swift in Sources */,
 				64A006D9213FD940001BA205 /* AppDelegate.swift in Sources */,
 				64A006E1213FD940001BA205 /* EDUMVA.xcdatamodeld in Sources */,
 			);
