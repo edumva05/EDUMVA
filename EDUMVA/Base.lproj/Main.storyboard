@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KEf-hN-w65">
     <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
                     <view key="view" contentMode="scaleToFill" id="7nT-JB-bzT">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ntu-q0-fIC"/>
                     </view>
                 </viewController>
@@ -33,7 +33,7 @@
                     <view key="view" contentMode="scaleToFill" id="H4x-Uv-4aI">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2GK-zB-RCh"/>
                     </view>
                 </viewController>
@@ -48,7 +48,7 @@
                     <view key="view" contentMode="scaleToFill" id="Qw0-gv-bL2">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="J34-CF-0WH"/>
                     </view>
                 </viewController>
@@ -63,13 +63,13 @@
                     <view key="view" contentMode="scaleToFill" id="eN7-qh-tqy">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NOk-xf-p4r"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlG-IN-bUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852" y="1086"/>
+            <point key="canvasLocation" x="-852.12298682284029" y="1085.7421875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -91,9 +91,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U1-v0-FGf">
                                 <rect key="frame" x="62" y="257" width="402" height="321"/>
                                 <state key="normal" backgroundImage="FoodHome"/>
-                                <connections>
-                                    <segue destination="KEf-hN-w65" kind="show" id="LCq-KN-LvT"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-ac-iGZ">
                                 <rect key="frame" x="482.5" y="257" width="401.5" height="321"/>
@@ -374,52 +371,80 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKB-96-WNU">
                                 <rect key="frame" x="0.0" y="945" width="1366" height="79"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueBarTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-Jz-6hA">
-                                        <rect key="frame" x="634" y="0.0" width="98" height="9"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueBarTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-Jz-6hA">
+                                        <rect key="frame" x="634" y="0.0" width="98" height="8"/>
                                     </imageView>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Er-Y5R">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Er-Y5R">
                                         <rect key="frame" x="989" y="17" width="52" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="FTPGrey"/>
+                                        <state key="selected" image="FTPBlue"/>
                                         <connections>
+                                            <action selector="MovingBlueImageView:" destination="KEf-hN-w65" eventType="touchUpInside" id="dWq-k0-Nzn"/>
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="XpV-Jh-mdd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-e6-8a6">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-e6-8a6">
                                         <rect key="frame" x="333" y="8" width="55" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="ResultGrey"/>
+                                        <state key="selected" image="ResultBlue"/>
                                         <connections>
+                                            <action selector="MovingBlueImageView:" destination="KEf-hN-w65" eventType="touchUpInside" id="G6j-5U-pGX"/>
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="eCb-61-L6J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-yI-wcj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-yI-wcj">
                                         <rect key="frame" x="19" y="6" width="68" height="66"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="FeedsGrey"/>
+                                        <state key="selected" image="FeedsBlue"/>
                                         <connections>
+                                            <action selector="MovingBlueImageView:" destination="KEf-hN-w65" eventType="touchUpInside" id="R45-X7-1Z3"/>
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="Gyt-EK-wEG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-mJ-PZd">
-                                        <rect key="frame" x="1267" y="12" width="54" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-mJ-PZd">
+                                        <rect key="frame" x="1267" y="12" width="55" height="55"/>
                                         <state key="normal" backgroundImage="ProfileGrey"/>
+                                        <state key="selected" image="ProfileBlue"/>
                                         <connections>
+                                            <action selector="MovingBlueImageView:" destination="KEf-hN-w65" eventType="touchUpInside" id="pXl-tr-MJJ"/>
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="7yF-VS-QPn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-vA-VW8">
-                                        <rect key="frame" x="660" y="16" width="47" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="HomeBlue"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-vA-VW8">
+                                        <rect key="frame" x="660" y="11.5" width="47" height="50"/>
+                                        <state key="normal" image="HomeBlue"/>
+                                        <state key="selected" image="HomeBlue"/>
                                         <connections>
+                                            <action selector="MovingBlueImageView:" destination="KEf-hN-w65" eventType="touchUpInside" id="5L5-VM-VXv"/>
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="4q3-RG-dAG"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0p1-Er-Y5R" firstAttribute="height" secondItem="CKB-96-WNU" secondAttribute="height" multiplier="45/79" id="3wv-2Q-QY3"/>
+                                    <constraint firstItem="0p1-Er-Y5R" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" id="6Cd-n6-zZ0"/>
+                                    <constraint firstItem="bHx-e6-8a6" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" multiplier="0.9" id="CLY-ev-fjY"/>
+                                    <constraint firstItem="Csx-mJ-PZd" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" id="Cmi-w1-R9l"/>
+                                    <constraint firstItem="0p1-Er-Y5R" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" multiplier="1.485" id="D81-7y-cMu"/>
+                                    <constraint firstItem="0p1-Er-Y5R" firstAttribute="width" secondItem="CKB-96-WNU" secondAttribute="width" multiplier="52/1366" id="F3s-XT-Dmz"/>
+                                    <constraint firstItem="HW8-yI-wcj" firstAttribute="height" secondItem="CKB-96-WNU" secondAttribute="height" multiplier="66/79" id="I33-b3-457"/>
+                                    <constraint firstItem="bHx-e6-8a6" firstAttribute="width" secondItem="CKB-96-WNU" secondAttribute="width" multiplier="55/1366" id="Qjg-1t-7QF"/>
+                                    <constraint firstItem="HW8-yI-wcj" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" multiplier="0.078" id="R12-xv-gX4"/>
+                                    <constraint firstItem="Csx-mJ-PZd" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" multiplier="1.895" id="T49-y8-ga4"/>
+                                    <constraint firstItem="HW8-yI-wcj" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" multiplier="0.99" id="VGk-XK-jRL"/>
+                                    <constraint firstItem="zob-vA-VW8" firstAttribute="width" secondItem="CKB-96-WNU" secondAttribute="width" multiplier="47/1366" id="Y3g-vW-RJn"/>
+                                    <constraint firstItem="IiI-Jz-6hA" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" id="YAa-7j-GVL"/>
+                                    <constraint firstItem="bHx-e6-8a6" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" multiplier="0.527" id="YM3-Kg-G9f"/>
+                                    <constraint firstItem="zob-vA-VW8" firstAttribute="height" secondItem="CKB-96-WNU" secondAttribute="height" multiplier="50/79" id="ajL-7G-ozf"/>
+                                    <constraint firstItem="IiI-Jz-6hA" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" multiplier="0.1" id="bdA-ph-glP"/>
+                                    <constraint firstItem="zob-vA-VW8" firstAttribute="centerX" secondItem="CKB-96-WNU" secondAttribute="centerX" id="ddX-uc-ilk"/>
+                                    <constraint firstItem="zob-vA-VW8" firstAttribute="centerY" secondItem="CKB-96-WNU" secondAttribute="centerY" multiplier="0.925" id="kvm-8H-Au5"/>
+                                    <constraint firstItem="HW8-yI-wcj" firstAttribute="width" secondItem="CKB-96-WNU" secondAttribute="width" multiplier="68/1366" id="oa3-N3-h8l"/>
+                                    <constraint firstItem="Csx-mJ-PZd" firstAttribute="width" secondItem="bHx-e6-8a6" secondAttribute="width" id="pOl-p7-SNv"/>
+                                    <constraint firstItem="Csx-mJ-PZd" firstAttribute="height" secondItem="bHx-e6-8a6" secondAttribute="height" id="qhb-br-dOB"/>
+                                    <constraint firstItem="bHx-e6-8a6" firstAttribute="height" secondItem="CKB-96-WNU" secondAttribute="height" multiplier="55/79" id="xI5-aX-oAr"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -439,6 +464,13 @@
                     <navigationItem key="navigationItem" id="6hf-Tn-RSN"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="BlueMovingView" destination="IiI-Jz-6hA" id="YQB-GY-QaL"/>
+                        <outlet property="btn1" destination="HW8-yI-wcj" id="duj-8M-y8X"/>
+                        <outlet property="btn2" destination="bHx-e6-8a6" id="if3-wN-qGA"/>
+                        <outlet property="btn3" destination="zob-vA-VW8" id="Dgd-tT-0ca"/>
+                        <outlet property="btn4" destination="0p1-Er-Y5R" id="GLA-An-7Y6"/>
+                        <outlet property="btn5" destination="Csx-mJ-PZd" id="Dwp-bm-EFb"/>
+                        <outlet property="tabView" destination="CKB-96-WNU" id="sVI-YX-2ZY"/>
                         <outlet property="viewDisplay" destination="9bm-2M-kCd" id="lme-cU-10H"/>
                         <outletCollection property="buttons" destination="zob-vA-VW8" collectionClass="NSMutableArray" id="d2A-wt-PPT"/>
                         <outletCollection property="buttons" destination="Csx-mJ-PZd" collectionClass="NSMutableArray" id="3ad-QR-ozA"/>
@@ -449,27 +481,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXt-6G-SY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="42"/>
+            <point key="canvasLocation" x="713.76281112737911" y="41.6015625"/>
         </scene>
     </scenes>
     <resources>
         <image name="AboutUsHome" width="402" height="321"/>
         <image name="BlueBarTabBar" width="98" height="8"/>
         <image name="CalendarHome" width="402" height="321"/>
+        <image name="FTPBlue" width="52" height="45"/>
         <image name="FTPGrey" width="52" height="45"/>
+        <image name="FeedsBlue" width="68" height="68"/>
         <image name="FeedsGrey" width="68" height="68"/>
         <image name="FoodHome" width="402" height="321"/>
         <image name="GalleryHome" width="402" height="321"/>
         <image name="HomeBlue" width="47" height="50"/>
+        <image name="ProfileBlue" width="54" height="54"/>
         <image name="ProfileCircle" width="127" height="127"/>
         <image name="ProfileGrey" width="54" height="54"/>
+        <image name="ResultBlue" width="55" height="55"/>
         <image name="ResultGrey" width="55" height="55"/>
         <image name="ResultsHome" width="402" height="321"/>
         <image name="SocialHome" width="402" height="321"/>
         <image name="TopBlueView" width="1024" height="353"/>
         <image name="anandsir" width="389" height="408"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="LCq-KN-LvT"/>
-    </inferredMetricsTieBreakers>
 </document>
