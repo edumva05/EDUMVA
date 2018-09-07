@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KEf-hN-w65">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="zNV-aY-Zid">
             <objects>
-                <viewController id="24J-73-ne0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedsViewController" id="24J-73-ne0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7nT-JB-bzT">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
         <!--View Controller-->
         <scene sceneID="uvF-NU-HCP">
             <objects>
-                <viewController id="vbA-Ak-Chy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExamViewController" id="vbA-Ak-Chy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4x-Uv-4aI">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--View Controller-->
         <scene sceneID="PmY-fc-Mw9">
             <objects>
-                <viewController id="hQQ-YA-Uyc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FtpViewController" id="hQQ-YA-Uyc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qw0-gv-bL2">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
         <!--View Controller-->
         <scene sceneID="oNN-IL-eV6">
             <objects>
-                <viewController id="g6P-Pv-kgj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProflieViewController" id="g6P-Pv-kgj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eN7-qh-tqy">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-852" y="1086"/>
         </scene>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U1-v0-FGf">
                                 <rect key="frame" x="62" y="257" width="402" height="321"/>
                                 <state key="normal" backgroundImage="FoodHome"/>
+                                <connections>
+                                    <segue destination="KEf-hN-w65" kind="show" id="LCq-KN-LvT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-ac-iGZ">
                                 <rect key="frame" x="482.5" y="257" width="401.5" height="321"/>
@@ -101,11 +104,11 @@
                                 <state key="normal" backgroundImage="GalleryHome"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsG-3V-0fp">
-                                <rect key="frame" x="62" y="596.5" width="402" height="320.5"/>
+                                <rect key="frame" x="62" y="596" width="402" height="321"/>
                                 <state key="normal" backgroundImage="AboutUsHome"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08G-YA-75w">
-                                <rect key="frame" x="482.5" y="596.5" width="401.5" height="320.5"/>
+                                <rect key="frame" x="482.5" y="596" width="401.5" height="321"/>
                                 <state key="normal" backgroundImage="ResultsHome"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXH-Co-d4Q">
@@ -116,7 +119,7 @@
                                 <rect key="frame" x="624.5" y="34.5" width="117" height="117.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMz-Ty-AZs">
-                                <rect key="frame" x="903.5" y="596.5" width="402" height="320.5"/>
+                                <rect key="frame" x="903.5" y="596" width="402" height="321"/>
                                 <state key="normal" backgroundImage="SocialHome"/>
                             </button>
                         </subviews>
@@ -364,20 +367,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bm-2M-kCd">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bm-2M-kCd">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKB-96-WNU">
-                                <rect key="frame" x="0.0" y="937" width="1366" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKB-96-WNU">
+                                <rect key="frame" x="0.0" y="945" width="1366" height="79"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueBarTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-Jz-6hA">
                                         <rect key="frame" x="634" y="0.0" width="98" height="9"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Er-Y5R">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Er-Y5R">
                                         <rect key="frame" x="989" y="17" width="52" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="FTPGrey"/>
@@ -385,7 +386,7 @@
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="XpV-Jh-mdd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-e6-8a6">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-e6-8a6">
                                         <rect key="frame" x="333" y="8" width="55" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="ResultGrey"/>
@@ -393,7 +394,7 @@
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="eCb-61-L6J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-yI-wcj">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-yI-wcj">
                                         <rect key="frame" x="19" y="6" width="68" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="FeedsGrey"/>
@@ -401,7 +402,7 @@
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="Gyt-EK-wEG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-mJ-PZd">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-mJ-PZd">
                                         <rect key="frame" x="1267" y="12" width="54" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="ProfileGrey"/>
@@ -409,7 +410,7 @@
                                             <action selector="didPressTab:" destination="KEf-hN-w65" eventType="touchUpInside" id="7yF-VS-QPn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-vA-VW8">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-vA-VW8">
                                         <rect key="frame" x="660" y="16" width="47" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="HomeBlue"/>
@@ -422,6 +423,16 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1bU-0W-ipc" firstAttribute="top" secondItem="CKB-96-WNU" secondAttribute="bottom" id="155-Dj-Zfx"/>
+                            <constraint firstItem="9bm-2M-kCd" firstAttribute="leading" secondItem="qGb-iv-hIw" secondAttribute="leading" id="Cek-op-y93"/>
+                            <constraint firstItem="CKB-96-WNU" firstAttribute="height" secondItem="3Uc-cW-D0N" secondAttribute="height" multiplier="79/1024" id="FYi-HI-iff"/>
+                            <constraint firstItem="CKB-96-WNU" firstAttribute="leading" secondItem="qGb-iv-hIw" secondAttribute="leading" id="QQK-nl-Nsu"/>
+                            <constraint firstItem="1bU-0W-ipc" firstAttribute="top" secondItem="9bm-2M-kCd" secondAttribute="bottom" id="Uvr-JD-UJl"/>
+                            <constraint firstItem="9bm-2M-kCd" firstAttribute="top" secondItem="3Uc-cW-D0N" secondAttribute="top" id="iX9-ez-HQ0"/>
+                            <constraint firstItem="9bm-2M-kCd" firstAttribute="trailing" secondItem="qGb-iv-hIw" secondAttribute="trailing" id="iq3-RA-X0n"/>
+                            <constraint firstItem="CKB-96-WNU" firstAttribute="width" secondItem="3Uc-cW-D0N" secondAttribute="width" id="nui-b4-1DE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qGb-iv-hIw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="XRl-Jg-4dJ"/>
@@ -458,4 +469,7 @@
         <image name="TopBlueView" width="1024" height="353"/>
         <image name="anandsir" width="389" height="408"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LCq-KN-LvT"/>
+    </inferredMetricsTieBreakers>
 </document>

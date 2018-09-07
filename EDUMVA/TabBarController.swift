@@ -52,6 +52,7 @@ class TabBarController: UIViewController, UIGestureRecognizerDelegate  {
         viewControllers = [ FeedsViewController, ExamViewController,HomeViewController, FtpViewController, ProflieViewController]
         
         //Initallly select a ViewController
+        
         didPressTab(buttons[selectedIndex])
 
         // Do any additional setup after loading the view.
@@ -65,19 +66,21 @@ class TabBarController: UIViewController, UIGestureRecognizerDelegate  {
 
     @IBAction func didPressTab(_ sender: UIButton) {
         
-        
-        
+    
+   
         
         //Keeps track of the previous button
         let previousIndex = selectedIndex
         //Set the selectedIndex to the tag value of which ever button was tapped.
+             print(selectedIndex)
         selectedIndex = sender.tag
+             print(selectedIndex)
         //Set previous selected button to non-selected state
         buttons[previousIndex].isSelected = false
         
         //Use the previousIndex to access the previous ViewController from the viewControllers array.
         let previousVC = viewControllers[previousIndex]
-        
+       
         //Remove the previous ViewController
         previousVC.willMove(toParentViewController: nil)
         previousVC.view.removeFromSuperview()
