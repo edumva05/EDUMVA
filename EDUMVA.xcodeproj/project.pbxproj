@@ -13,6 +13,12 @@
 		64A006E1213FD940001BA205 /* EDUMVA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64A006DF213FD940001BA205 /* EDUMVA.xcdatamodeld */; };
 		64A006E3213FD942001BA205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A006E2213FD942001BA205 /* Assets.xcassets */; };
 		64A006E6213FD942001BA205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A006E4213FD942001BA205 /* LaunchScreen.storyboard */; };
+		E4389225214295D7000555B2 /* ViewControllerFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E4389223214295D7000555B2 /* ViewControllerFTP.m */; };
+		E4389226214295D7000555B2 /* webViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4389224214295D7000555B2 /* webViewViewController.m */; };
+		E438922B21429943000555B2 /* ViewControllerGALLERY.m in Sources */ = {isa = PBXBuildFile; fileRef = E438922821429942000555B2 /* ViewControllerGALLERY.m */; };
+		E438922C21429943000555B2 /* GALLERYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E438922A21429942000555B2 /* GALLERYViewController.m */; };
+		E438923321429B89000555B2 /* webHomework.m in Sources */ = {isa = PBXBuildFile; fileRef = E438922F21429B88000555B2 /* webHomework.m */; };
+		E438923421429B89000555B2 /* homework.m in Sources */ = {isa = PBXBuildFile; fileRef = E438923221429B89000555B2 /* homework.m */; };
 		E4CD4359214015AC00C1FEB5 /* ViewControllerFEEDS.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD4358214015AC00C1FEB5 /* ViewControllerFEEDS.m */; };
 		E564E66021400CEC00A091DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E564E65F21400CEC00A091DF /* TabBarController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +32,18 @@
 		64A006E2213FD942001BA205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A006E5213FD942001BA205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A006E7213FD942001BA205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4389221214295D7000555B2 /* ViewControllerFTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFTP.h; sourceTree = "<group>"; };
+		E4389222214295D7000555B2 /* webViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewViewController.h; sourceTree = "<group>"; };
+		E4389223214295D7000555B2 /* ViewControllerFTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFTP.m; sourceTree = "<group>"; };
+		E4389224214295D7000555B2 /* webViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewViewController.m; sourceTree = "<group>"; };
+		E438922721429942000555B2 /* ViewControllerGALLERY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerGALLERY.h; sourceTree = "<group>"; };
+		E438922821429942000555B2 /* ViewControllerGALLERY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerGALLERY.m; sourceTree = "<group>"; };
+		E438922921429942000555B2 /* GALLERYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GALLERYViewController.h; sourceTree = "<group>"; };
+		E438922A21429942000555B2 /* GALLERYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GALLERYViewController.m; sourceTree = "<group>"; };
+		E438922F21429B88000555B2 /* webHomework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webHomework.m; sourceTree = "<group>"; };
+		E438923021429B88000555B2 /* homework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homework.h; sourceTree = "<group>"; };
+		E438923121429B88000555B2 /* webHomework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webHomework.h; sourceTree = "<group>"; };
+		E438923221429B89000555B2 /* homework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homework.m; sourceTree = "<group>"; };
 		E4CD4356214015AC00C1FEB5 /* EDUMVA-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EDUMVA-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4CD4357214015AC00C1FEB5 /* ViewControllerFEEDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFEEDS.h; sourceTree = "<group>"; };
 		E4CD4358214015AC00C1FEB5 /* ViewControllerFEEDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFEEDS.m; sourceTree = "<group>"; };
@@ -62,6 +80,9 @@
 		64A006D7213FD940001BA205 /* EDUMVA */ = {
 			isa = PBXGroup;
 			children = (
+				E438922E21429B62000555B2 /* HomeWork */,
+				E438922D21429946000555B2 /* Gallery */,
+				E438922021429589000555B2 /* FTP */,
 				E4CD435A214015B800C1FEB5 /* Feeds */,
 				64A006D8213FD940001BA205 /* AppDelegate.swift */,
 				64A006DA213FD940001BA205 /* HomeViewController.swift */,
@@ -73,6 +94,39 @@
 				64A006DF213FD940001BA205 /* EDUMVA.xcdatamodeld */,
 			);
 			path = EDUMVA;
+			sourceTree = "<group>";
+		};
+		E438922021429589000555B2 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				E4389221214295D7000555B2 /* ViewControllerFTP.h */,
+				E4389223214295D7000555B2 /* ViewControllerFTP.m */,
+				E4389222214295D7000555B2 /* webViewViewController.h */,
+				E4389224214295D7000555B2 /* webViewViewController.m */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
+		E438922D21429946000555B2 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				E438922921429942000555B2 /* GALLERYViewController.h */,
+				E438922A21429942000555B2 /* GALLERYViewController.m */,
+				E438922721429942000555B2 /* ViewControllerGALLERY.h */,
+				E438922821429942000555B2 /* ViewControllerGALLERY.m */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		E438922E21429B62000555B2 /* HomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				E438923021429B88000555B2 /* homework.h */,
+				E438923221429B89000555B2 /* homework.m */,
+				E438923121429B88000555B2 /* webHomework.h */,
+				E438922F21429B88000555B2 /* webHomework.m */,
+			);
+			path = HomeWork;
 			sourceTree = "<group>";
 		};
 		E4CD435A214015B800C1FEB5 /* Feeds */ = {
@@ -156,9 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E438923321429B89000555B2 /* webHomework.m in Sources */,
+				E438922C21429943000555B2 /* GALLERYViewController.m in Sources */,
 				64A006DB213FD940001BA205 /* HomeViewController.swift in Sources */,
+				E438922B21429943000555B2 /* ViewControllerGALLERY.m in Sources */,
 				E564E66021400CEC00A091DF /* TabBarController.swift in Sources */,
+				E438923421429B89000555B2 /* homework.m in Sources */,
 				E4CD4359214015AC00C1FEB5 /* ViewControllerFEEDS.m in Sources */,
+				E4389225214295D7000555B2 /* ViewControllerFTP.m in Sources */,
+				E4389226214295D7000555B2 /* webViewViewController.m in Sources */,
 				64A006D9213FD940001BA205 /* AppDelegate.swift in Sources */,
 				64A006E1213FD940001BA205 /* EDUMVA.xcdatamodeld in Sources */,
 			);
