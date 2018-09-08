@@ -9,6 +9,13 @@ import UIKit
 
 class TabBarController: UIViewController, UIGestureRecognizerDelegate  {
     @IBOutlet weak var tabView: UIView!
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    
+    
     
     var viewControllers: [UIViewController]!
     
@@ -18,22 +25,35 @@ class TabBarController: UIViewController, UIGestureRecognizerDelegate  {
     var FtpViewController: UIViewController!
     var ProflieViewController: UIViewController!
     
-    var selectedIndex: Int = 2
+    var selectedIndex: Int = 0
     
     @IBOutlet var buttons: [UIButton]!
     
     @IBOutlet weak var viewDisplay: UIView!
     
+    @IBOutlet weak var BlueMovingView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      /*  tabView.layer.applySketchShadow(
+        
+        BlueMovingView.bounds.size.width = (tabView.bounds.size.width * (98/1366))
+        BlueMovingView.bounds.size.height = (tabView.bounds.size.height * (8/79))
+        
+
+        
+   
+    /*    BlueMovingView.center.x = tabView.center.x
+        BlueMovingView.center.y = tabView.center.y
+       
+       */
+        tabView.layer.applySketchShadow(
             color: .black,
             alpha: 0.7,
             x: 0,
             y: 0,
             blur: 16,
             spread: 0)
- */
+ 
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -69,38 +89,72 @@ class TabBarController: UIViewController, UIGestureRecognizerDelegate  {
     
    
         
-        //Keeps track of the previous button
+     
         let previousIndex = selectedIndex
-        //Set the selectedIndex to the tag value of which ever button was tapped.
+  
              print(selectedIndex)
         selectedIndex = sender.tag
              print(selectedIndex)
-        //Set previous selected button to non-selected state
+      
         buttons[previousIndex].isSelected = false
         
-        //Use the previousIndex to access the previous ViewController from the viewControllers array.
+
         let previousVC = viewControllers[previousIndex]
        
-        //Remove the previous ViewController
+       
         previousVC.willMove(toParentViewController: nil)
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParentViewController()
         
-        //Access the selected button and set it to the selected state.
+       
         sender.isSelected = true
         
-        //Use the selectedIndex to access the current ViewController from the viewControllers array.
+     
         let vc = viewControllers[selectedIndex]
-        //Add the new ViewController to display view
+        
         addChildViewController(vc)
         
-        //Adjusts the size of the ViewController view add it as a subView of the contentView.
+        
         vc.view.frame = viewDisplay.bounds
         viewDisplay.addSubview(vc.view)
-        //Call the viewDidAppear method of the coming ViewController
+       
         vc.didMove(toParentViewController: self)
         
     }
+    
+    
+    
+    @IBAction func MovingBlueImageView(_ sender: UIButton)
+    {
+        btn1.setImage(#imageLiteral(resourceName: "FeedsGrey.png"), for: .normal)
+        btn2.setImage(#imageLiteral(resourceName: "ResultGrey.png"), for: .normal)
+        btn3.setImage(#imageLiteral(resourceName: "HomeGrey.png"), for: .normal)
+        btn4.setImage(#imageLiteral(resourceName: "FTPGrey.png"), for: .normal)
+        btn5.setImage(#imageLiteral(resourceName: "ProfileGrey.png"), for: .normal)
+        
+        if(sender.tag == 0)
+        {
+            
+        }
+        
+        UIView.animate(withDuration: 0.30, delay: 0, options: [UIViewAnimationOptions.curveEaseInOut], animations: {
+           
+            () -> Void in
+            
+            self.BlueMovingView.center.x = sender.center.x
+        }, completion: { (finished) -> Void in
+         
+        })
+    
+        
+    }
+    
+
+    
+    
+    
+    
+    
 
 }
 
